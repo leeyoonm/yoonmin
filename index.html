@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Jersey+20&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link href="./style.css" rel="stylesheet" />
+
+  <!-- smooth scrolling -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+  <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script> 
+  <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
+
+  <title>Yoonmin's Portfolio</title>
+</head>
+<body>
+
+  <!---->
+
+  <div class="page">
+
+    <!-- top nav (fixed) -->
+    <header class="top-nav">
+      <div class = "top-left">
+        <!-- <span class="logo">YOONMIN L.</span> -->
+        <span class="email" id = "myemail">leeyoonm@student.ubc.ca</span>
+        <span class = "linkedinlink"><a href="https://linkedin.com/in/yoonmin-lee" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+        
+        
+      </div>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">my work</a>
+        <a href="about.html" class="nav-link non-active">about</a>
+      </nav>
+    </header>
+
+    <!-- content area sits below the fixed nav -->
+    <div class="content">
+
+      <!-- about -->
+      <section class = "intro-wrap">
+        <section class="intro">
+          <h1 class="intro__title">Hi! I&rsquo;m Yoonmin.</h1>
+          <p class="intro__text">
+            I am a third year mechanical engineering student at UBC specializing in mechatronics. 
+            
+            I enjoy testing innovative ideas to solve problems, applying this philosophy across projects ranging from aerodynamic vehicle designs to water delivery systems.
+            <!-- <br><br> -->
+            <!-- I am looking for co-op / internship opportunities starting from [] 27.  -->
+            <br><br>
+            Feel free to reach out on <a class = "linkedin-add" href = "https://linkedin.com/in/yoonmin-lee" target="_blank">Linkedin</a> or by <span class = "email-add" onclick="copyEmail()" >email</span> if you want to have a chat, whether it's about work opportunities, vehicle aerodynamics, or my favourite bubble tea order!
+          </p>
+          <div class="intro__buttons">
+            <a class="btn btn--filled" target="_blank" href = "assets/Resume_YoonminLee.pdf">my resume</a>
+            <a class="btn btn--outline" href = "about.html" >more about me!</a>
+          </div>
+        </section>
+      </section>
+
+      <script>
+        function copyEmail() {
+          navigator.clipboard.writeText('leeyoonm@student.ubc.ca').then(() => {
+            alert('Email copied to clipboard!');
+          });
+        }
+      </script>
+      
+
+      <!-- projects -->
+      <main class="project-list">
+
+        <section class="project">
+          <div class="project__image">
+            <img src = "assets/coolfcp.webp">
+          </div>
+          <h2 class="project__title">VEHICLE SHELL DESIGN & SURFACE MODELLING RESEARCH : UBC Supermileage</h2>
+          <p class="project__text">
+            Design concepts for the team's newest Fuel Cell Prototype vehicle. I focused on exploring ergonomic designs, providing insights to the trade-offs between aerodynamics and driver comfort. 
+            <br><br>
+            I contributed to the developent of the team's 3D modelling workflow, delving into surface modelling features in SolidWorks. As a result, our team acquired surface modelling techniques used to connect multiple surfaces flawlessly, improving simulation results and aerodynamic performance. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">SolidWorks</span>
+            <span class="skill">StarCCM+</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <img src = "assets/star.webp">
+          </div>
+          <h2 class="project__title">COMPUTATIONAL FLUID DYNAMICS (CFD) VALIDATION STUDIES : UBC Supermileage</h2>
+          <p class="project__text">
+            To ensure that the team's Computational Fluid Dynamics (CFD) template results correlate with reality, I conducted CFD validation studies in STAR-CCM+, and established the team’s new CFD methodology by performing a baseline validation simulation.
+          </p>
+          <div class="project__skills">
+            <span class="skill">SolidWorks</span>
+            <span class="skill">StarCCM+</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <img src = "assets/urbantemplate.webp">
+          </div>
+          <h2 class="project__title">VEHICLE DESIGN TEMPLATE : UBC Supermileage</h2>
+          <p class="project__text">
+            A SolidWorks assembly template for the team's new Urban Concept Vehicle. This template enables future shell concepts to be modelled directly in the assembly, ensuring that designs meet competition guidelines and assembly constraints. Additionally, equations were used to allow the user to adjust dimensions such as track width and vehicle length.
+          </p>
+          <div class="project__skills">
+            <span class="skill">SolidWorks</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <img src = "assets/human2.webp">
+          </div>
+          <h2 class="project__title">ADJUSTABLE DRIVER MODEL : UBC Supermileage</h2>
+          <p class="project__text">
+            A SolidWorks model of a full human body. This model uses <a target = "_blank" class = "email-add" href = "https://ca.linkedin.com/in/alycia-cheng-ubc">Alycia Cheng</a>'s work as a base. Modifications were made to the joint designs and equations of the original model, so that users can input the vehicle driver's dimensions and create a replica model. This adjustable model allows the team to design a vehicle for the driver's specific needs, and verifies that safety requirements are met. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">SolidWorks</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <div class = "wdv">
+              <img class = "noz" src = "assets/nozzle.webp">
+              <img class = "car" src = "assets/vehicle.webp">
+            </div>
+          </div>
+
+          <h2 class="project__title">WATER DELIVERY VEHICLE : MECH 223 Team Project</h2>
+          <p class="project__text">
+            Design and manufacture of an RC fire-fighting vehicle. The main vehicle body consists fully of sheet metal, and its movement is controlled by servo motors. It uses pressurized air to discharge the water. 
+            <br><br>
+            I designed the rotational mechanism for the water nozzle, which is made with sheet metal and is attached to the servo motors with screws. To fully analyse the system, I developed and performed an experiment to determine the friction factor of the nozzle system. This was then used to optimize the amount of water in our vehicle's water storage, and simulate the water trajectory. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">SolidWorks</span>
+            <span class="skill">MATLAB</span>
+            <span class="skill">Rapid Prototyping</span>
+            <span class="skill">Sheet Metal</span>
+            <span class="skill">Hand Tools</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image study">
+            <img src = "assets/study.webp">
+          </div>
+          <h2 class="project__title">STUDY-GOTCHI : Personal Project</h2>
+          <p class="project__text">
+            A Python game built using Pygame, inspired by the 'Tamagotchi' toy series. In this game, players take care of a pet octopus by studying. Time studied by the player is recorded, then converted into in-game currency, which the players can use to purchase in-game items. The game also includes a pomodoro timer to encourage healthy study habits. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">Python</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <img src = "assets/rhs.webp">
+          </div>
+          <h2 class="project__title">RAINWATER HARVESTING SYSTEM : APSC 101 Team Project</h2>
+          <p class="project__text">
+            A mathematical model of a solar-powered rainwater harvesting system in Microsoft Excel, used to optimize the system's specifications. Fluid mechanics concepts were applied to accurately model the physics of the system. To ensure that the system remained consistent for any set of data, historical data of yearly precipitation and sunlight were utilized. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">Microsoft Excel</span>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="project__image">
+            <div class = "wdv">
+              <img class = "tom1" src = "assets/tom2.webp">
+              <img class = "tom2" src = "assets/tom1.webp">
+            </div>
+          </div>
+          <h2 class="project__title">AUTONOMOUS CLAW : APSC 101 Team Project</h2>
+          <p class="project__text">
+            An autonomous claw that uses an ultrasonic sensor and an Arduino Uno to detect objects within a range and pick them up. The claw's movements are controlled by a servo.
+            I contributed to the conceptualization of the claw, as well as prototyping using sheet metal and cardboard. 
+          </p>
+          <div class="project__skills">
+            <span class="skill">Hand Tools</span>
+            <span class="skill">Sheet Metal</span>
+            <span class="skill">Arduino</span>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class = "footer">
+      <p>You've reached the end :) Thank you for viewing my portfolio!</p>
+    </div>
+
+  </div>
+</body>
+</html>
